@@ -1,5 +1,5 @@
 {
-    "name": "roundcube/virtuser_user_mapping",
+    "name": "roundcube/virtual_user_mapping",
     "type": "roundcube-plugin",
     "description": "Virtual User mapping multiple user logins for one account.",
     "license": "GNU GPLv3+",
