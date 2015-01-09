@@ -1,0 +1,24 @@
+{
+    "name": "roundcube/virtuser_user_mapping",
+    "type": "roundcube-plugin",
+    "description": "Virtual User mapping multiple user logins for one account.",
+    "license": "GNU GPLv3+",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Pierre Arlt",
+            "email": "info@pierrearlt.com",
+            "role": "Lead"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://plugins.roundcube.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "roundcube/plugin-installer": ">=0.1.3"
+    }
+}
