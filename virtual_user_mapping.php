@@ -6,6 +6,31 @@
  * @version 1.0
  * @license GNU GPLv3+
  * @author Pierre Arlt
+ * 
+ * 
+ *  Add in your config file:
+ * 
+ *  $config['virtualUserMapping'] = array(
+ *      'REAL DOMAIN 1' => array(
+ *          'REAL ACCOUNT 1' => array(
+ *              'pass' => 'REAL ACCOUNT PASS',
+ *              'users' => array(
+ *                  'VIRTUAL USER NAME 1' => 'VIRTUAL USER NAME PASS 1',
+ *                  'VIRTUAL USER NAME 2' => 'VIRTUAL USER NAME PASS 2',
+ *				    ...
+ *              )
+ *          ),
+ *          'REAL ACCOUNT 2' => array(
+ *              'pass' => 'REAL ACCOUNT 2 PASS',
+ *              'users' => array(
+ *                  'VIRTUAL USER NAME 3' => 'VIRTUAL USER NAME PASS 3 '
+ *			    ...
+ *              )
+ *          ),
+ *		    ...
+ *      )
+ *  );
+ *
  */
 class virtual_user_mapping extends rcube_plugin
 {
@@ -102,6 +127,4 @@ class virtual_user_mapping extends rcube_plugin
     {
         $this->app->write_log($this->logName, $data);
     }
-
-
 }
