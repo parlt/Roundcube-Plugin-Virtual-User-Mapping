@@ -39,7 +39,7 @@ class virtual_user_mapping extends rcube_plugin
         if (strpos($loginData[self::LOGIN_DATA_USER], '#') !== false) {
             $this->virtualUserMapping = $this->app->config->get('virtualUserMapping');
             if (!$this->virtualUserMapping) {
-                $this->writeLog('virtualUserMapping no active');
+                $this->writeLog('virtualUserMapping not active');
                 return $loginData;
             }
 
