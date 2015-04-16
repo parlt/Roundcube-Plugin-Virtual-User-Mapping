@@ -26,3 +26,43 @@ $config['virtualUserMapping'] = array(
     )
  );
  ```
+
+Now you can login with "VIRTUAL USER NAME 1#REAL DOMAIN 1".
+For example:
+
+```php
+$config['virtualUserMapping'] = array(
+  'example123.com' => array(
+    'sales.web99' => array(
+      'pass' => 'imapSecretForRealAccountSales',
+        'users' => array(
+          'practicant' => 'reallyLongPassword',
+          'teamleader' => 'anotherLongPassword',
+            ...
+          )
+    ),
+    'support.web99' => array(
+      'pass' => 'anotherImapSecret',
+      'users' => array(
+        'jefe' => 'extremLongPasswordWithALotOfSpecialChars '
+          ...
+        )
+      ),
+      ...
+    )
+ );
+ 
+ With a configuration like this you have following logins:
+
+
+| User                             | Password             | Mapped to Real Account  |
+| -------------------------------- |----------------------| ------------------------|
+| practicant#sales@example123.com  | reallyLongPassword   | sales.web99             |
+| teamleader#sales@example123.com  | anotherLongPassword  | sales.web99             |
+| jefe#sales@support.com           | anotherLongPassword  | support.web99           |
+
+
+Please note:
+The "#" is used as a splitter between the virtual user name and the existing imap account name.
+
+ 
