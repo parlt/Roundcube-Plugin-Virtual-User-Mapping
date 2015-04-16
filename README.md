@@ -59,7 +59,7 @@ $config['virtualUserMapping'] = array(
 | -------------------------------- |----------------------| ------------------------|
 | practicant#sales@example123.com  | reallyLongPassword   | sales.web99             |
 | teamleader#sales@example123.com  | anotherLongPassword  | sales.web99             |
-| jefe#sales@support.com           | anotherLongPassword  | support.web99           |
+| jefe#support@example123.com      | anotherLongPassword  | support.web99           |
 
 
 Please note:
