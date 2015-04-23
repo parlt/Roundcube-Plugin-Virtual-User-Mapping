@@ -55,11 +55,11 @@ $config['virtualUserMapping'] = array(
  With a configuration like this you have following logins:
 
 
-| User                             | Password             | Mapped to Real Account  |
-| -------------------------------- |----------------------| ------------------------|
-| practicant#sales@example123.com  | reallyLongPassword   | sales.web99             |
-| teamleader#sales@example123.com  | anotherLongPassword  | sales.web99             |
-| jefe#support@example123.com      | anotherLongPassword  | support.web99           |
+| User                             | Password                                  | Mapped to Real Account  |
+| -------------------------------- |-------------------------------------------| ------------------------|
+| practicant#sales@example123.com  | reallyLongPassword                        | sales.web99             |
+| teamleader#sales@example123.com  | anotherLongPassword                       | sales.web99             |
+| jefe#support@example123.com      | extremLongPasswordWithALotOfSpecialChars  | support.web99           |
 
 
 Please note:
